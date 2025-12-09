@@ -1,6 +1,7 @@
 PHISHING EMAIL ANALYSIS REPORT
 
-Task: Task 2 – Analyze a Phishing Email Prepared by: Dinesh Date:
+Task: Task 2 – Analyze a Phishing Email Prepared by: Karthikdoss
+Date:
 2025-12-09
 
 1.  Introduction This report analyzes a suspicious email that
