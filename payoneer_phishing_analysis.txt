@@ -1,0 +1,91 @@
+PHISHING EMAIL ANALYSIS REPORT
+
+Task: Task 2 – Analyze a Phishing Email Prepared by: Dinesh Date:
+2025-12-09
+
+1.  Introduction This report analyzes a suspicious email that
+    impersonates Payoneer. The objective is to detect phishing
+    indicators such as spoofed sender identity, mismatched URLs, urgent
+    language, suspicious attachments, grammar inconsistencies, and
+    header authentication failures (if available).
+
+2.  Sample Email Used
+
+Subject: Urgent: Action Required – Verify Your Payoneer Account From:
+Payoneer Security Team (actual address not provided in template)
+
+Dear Payoneer Customer,
+
+We’ve noticed unusual activity on your account and require immediate
+verification to secure your funds.
+
+Please confirm your account details by clicking the link below:
+http://maliciouslink.example.com
+
+Failure to verify within 24 hours will result in limited access to your
+funds.
+
+Thank you for your cooperation, Payoneer Security Team
+
+Attachment: None Source: Public phishing template (CanIPhish)
+
+3.  Analysis
+
+3.1 Sender Email Spoofing - Template lacks a real From: address, but the
+display name “Payoneer Security Team” can be easily spoofed. - Attackers
+commonly use look-alike domains such as: pay0neer.com,
+payoneer-secure.com, verification.payoneer-login.com Indicator: Likely
+spoofing attempt.
+
+3.2 Header Analysis Template email → no real headers to evaluate. If
+real, checks would include SPF, DKIM, DMARC, and Received chain
+analysis. Expected phishing outcome: SPF fail, DKIM none, DMARC fail,
+non-Payoneer sending IP.
+
+3.3 Suspicious Links Actual URL: http://maliciouslink.example.com - Not
+owned by Payoneer - Uses HTTP instead of HTTPS Indicator: Malicious
+credential-harvesting link.
+
+3.4 Suspicious Attachments - None included. Indicator: No attachment
+risk, but link is malicious.
+
+3.5 Urgency / Threatening Language Examples: - “Urgent: Action
+Required” - “Immediate verification” - “Failure to verify within 24
+hours” Indicator: Classic phishing urgency.
+
+3.6 Mismatched URLs (Hover Test) Visible text: “Verify Now” Actual URL:
+http://maliciouslink.example.com Indicator: Fake URL masked behind
+anchor text.
+
+3.7 Grammar / Spelling Issues - Clean grammar, but generic message.
+Indicator: Weak signal but supports phishing conclusion.
+
+4.  Summary of Phishing Indicators
+
+5.  Display-name spoofing likely
+
+6.  Missing/verifiable sender domain
+
+7.  Malicious URL unrelated to Payoneer
+
+8.  Strong urgency and threat language
+
+9.  Generic greeting
+
+10. Mismatched URL
+
+11. Insecure HTTP link
+
+12. Expected SPF/DKIM/DMARC failure (if headers existed)
+
+13. Conclusion This email is a phishing attempt aimed at stealing
+    Payoneer credentials. Do not click links or respond.
+
+14. Recommended Actions
+
+-   Verify sender domain before acting
+-   Hover links before clicking
+-   Report suspicious messages
+-   Avoid unknown attachments or insecure links
+-   Use SPF, DKIM, and DMARC policies
+-   Train users to recognize look-alike domains
