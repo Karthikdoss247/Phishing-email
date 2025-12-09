@@ -1,0 +1,15 @@
+Subject: Urgent: Action Required - Verify Your Payoneer Account
+
+Body:
+Dear Payoneer Customer,
+
+We've noticed unusual activity on your account and require immediate verification to secure your funds. Please confirm your account details by clicking the link below:
+
+http://maliciouslink.example.com
+
+Failure to verify within 24 hours will result in limited access to your funds.
+
+Thank you for your cooperation,
+Payoneer Security Team
+
+Source: https://caniphish.com/free-phishing-test/phishing-email-templates 
