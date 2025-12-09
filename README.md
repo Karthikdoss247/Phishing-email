@@ -1,4 +1,4 @@
-# Phishing Email Analysis Templates
+# Phishing Email Analysis 
 
 This repository contains a sample phishing email (from CanIPhish) and a small set of analysis documents and templates useful for performing hands-on email threat analysis.
 
